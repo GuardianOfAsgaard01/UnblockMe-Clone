@@ -1,9 +1,9 @@
 /* This project is written for
  * CEN 116 course
  * Compile with: gcc main.c functions.c functions.h -o UnblockMe -lallegro -lallegro_image -lallegro_primitives -lallegro_audio -lallegro_acodec -lallegro_font -lallegro_ttf
+ * Licensed under the GNU General Public License, version 3.0 (GPLv3)
  * Authors: Mustafa BOLEKEN, Uğur Can ÖZİPEK, Ümit KORKMAZER
  */
-#include <stdio.h>
 #include "functions.h"
 
 ALLEGRO_SAMPLE *wood_move = NULL;
@@ -26,7 +26,7 @@ ALLEGRO_TIMER *timer = NULL;
 ALLEGRO_MONITOR_INFO resolution;
 
 /* game area represented by matrices
- * 9 represents Walls, 1 represents Vertical Blocks and 2 represents Horizontal Blocks
+ * 9 represents walls, 1 represents vertical Blocks and 2 represents horizontal Blocks
  */
 int map[8][8]= {
     9, 9, 9, 9, 9, 9, 9, 9,
