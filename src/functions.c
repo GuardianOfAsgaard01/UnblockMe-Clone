@@ -1,6 +1,5 @@
 /* This project is written for
  * CEN 116 course
- * Compile with: gcc main.c functions.c functions.h -o UnblockMe -lallegro -lallegro_image -lallegro_primitives -lallegro_audio -lallegro_acodec -lallegro_font -lallegro_ttf
  * Licensed under the GNU General Public License, version 3.0 (GPLv3)
  * Authors: Mustafa BOLEKEN, Uğur Can ÖZİPEK, Ümit KORKMAZER
  */

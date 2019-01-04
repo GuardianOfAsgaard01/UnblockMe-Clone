@@ -1,6 +1,5 @@
 /* This project is written for
  * CEN 116 course
- * Compile with: gcc main.c functions.c functions.h -o UnblockMe -lallegro -lallegro_image -lallegro_primitives -lallegro_audio -lallegro_acodec -lallegro_font -lallegro_ttf
  * Licensed under the GNU General Public License, version 3.0 (GPLv3)
  * Authors: Mustafa BOLEKEN, Uğur Can ÖZİPEK, Ümit KORKMAZER
  */
@@ -83,13 +82,13 @@ int main(void) {
       exit(-1);
     }
 
-    wood_move = al_load_sample("media/audio/wood_move.ogg");
+    wood_move = al_load_sample("./src/media/audio/wood_move.ogg");
     if (!wood_move){
       fprintf(stderr, "failed to load wood_move!\n");
       exit(-1);
     }
 
-    wood_success = al_load_sample("media/audio/wood_success.wav");
+    wood_success = al_load_sample("./src/media/audio/wood_success.wav");
     if (!wood_success){
       fprintf(stderr, "failed to load wood_success!\n");
       al_destroy_sample(wood_move);
@@ -137,7 +136,7 @@ int main(void) {
       Scale = 2;
     }
 
-    background = al_load_bitmap("media/img/background.png");
+    background = al_load_bitmap("./src/media/img/background.png");
     if(!background) {
       fprintf(stderr, "failed to load background!\n");
       al_destroy_sample(wood_move);
@@ -147,7 +146,7 @@ int main(void) {
       exit(-1);
     }
 
-    Help = al_load_bitmap("media/img/help.png");
+    Help = al_load_bitmap("./src/media/img/help.png");
     if(!Help) {
       fprintf(stderr, "failed to load help!\n");
       al_destroy_sample(wood_move);
@@ -158,7 +157,7 @@ int main(void) {
       exit(-1);
     }
 
-    Block1 = al_load_bitmap("media/img/Block1.png");
+    Block1 = al_load_bitmap("./src/media/img/Block1.png");
     if(!Block1) {
       fprintf(stderr, "failed to load Block1!\n");
       al_destroy_sample(wood_move);
@@ -170,7 +169,7 @@ int main(void) {
       exit(-1);
     }
 
-    Block2 = al_load_bitmap("media/img/Block2.png");
+    Block2 = al_load_bitmap("./src/media/img/Block2.png");
     if(!Block2) {
       fprintf(stderr, "failed to load Block2!\n");
       al_destroy_sample(wood_move);
@@ -183,7 +182,7 @@ int main(void) {
       exit(-1);
     }
 
-    SoundOn = al_load_bitmap("media/img/SoundOn.png");
+    SoundOn = al_load_bitmap("./src/media/img/SoundOn.png");
     if(!SoundOn) {
       fprintf(stderr, "failed to load SoundOn!\n");
       al_destroy_sample(wood_move);
@@ -197,7 +196,7 @@ int main(void) {
       exit(-1);
     }
 
-    SoundOff = al_load_bitmap("media/img/SoundOff.png");
+    SoundOff = al_load_bitmap("./src/media/img/SoundOff.png");
     if(!SoundOff) {
       fprintf(stderr, "failed to load SoundOff!\n");
       al_destroy_sample(wood_move);
@@ -228,7 +227,7 @@ int main(void) {
       exit(-1);
     }
 
-    font = al_load_font("media/font/NemoyBold.otf", 52*Scale, 0);
+    font = al_load_font("./src/media/font/NemoyBold.otf", 52*Scale, 0);
     if(!font){
       fprintf(stderr, "failed to load NemoyBold(thin)!\n");
       al_destroy_sample(wood_move);
@@ -245,7 +244,7 @@ int main(void) {
       exit(-1);
     }
 
-    End = al_load_bitmap("media/img/end.jpg");
+    End = al_load_bitmap("./src/media/img/end.jpg");
     if(!End){
       fprintf(stderr, "failed to load end!\n");
       al_destroy_sample(wood_move);
@@ -263,7 +262,7 @@ int main(void) {
       exit(-1);
     }
 
-    Home = al_load_bitmap("media/img/Home.png");
+    Home = al_load_bitmap("./src/media/img/Home.png");
     if(!Home){
       fprintf(stderr, "failed to load home!\n");
       al_destroy_sample(wood_move);
@@ -282,7 +281,7 @@ int main(void) {
       exit(-1);
     }
 
-    Back = al_load_bitmap("media/img/Back.png");
+    Back = al_load_bitmap("./src/media/img/Back.png");
     if(!Back){
       fprintf(stderr, "failed to load back!\n");
       al_destroy_sample(wood_move);
